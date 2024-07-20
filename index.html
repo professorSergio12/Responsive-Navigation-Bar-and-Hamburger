@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="slider-main">
+            <div class="slider-container" onclick=closeButton()><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                    viewBox="0 96 960 960" width="26">
+                    <path
+                        d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+                </svg></div>
+            <div class="slider-container">Blog</div>
+            <div class="slider-container">Products</div>
+            <div class="slider-container">About</div>
+            <div class="slider-container">Forum</div>
+            <div class="slider-container">Login</div>
+        </div>
+        <div class="main-container">
+            <div class="logo">Logo</div>
+            <div class="nav-element">Blog</div>
+            <div class="nav-element">Products</div>
+            <div class="nav-element">About</div>
+            <div class="nav-element">Forum</div>
+            <div class="nav-element">Login</div>
+            <div class="nav-element-open" onclick=openButton()><svg xmlns="http://www.w3.org/2000/svg" height="26"
+                    viewBox="0 96 960 960" width="26">
+                    <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                </svg></div>
+        </div>
+    </nav>
+    <script>
+        function openButton() {
+            const openbtn = document.querySelector(".slider-main");
+            openbtn.style.display = 'flex';
+        }
+        function closeButton() {
+            const closebtn = document.querySelector(".slider-main");
+            closebtn.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url('laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-right: auto;
+}
+
+.nav-element {
+    height: 50px;
+    padding: 12px 22px 12px 22px;
+    cursor: pointer;
+}
+
+.nav-element-open {
+    height: 50px;
+    padding: 12px 22px 12px 22px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.nav-element:hover {
+    background-color: rgb(84, 80, 80);
+}
+
+/* Slider */
+
+.slider-main {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color:rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.slider-container{
+    height: 50px;
+    padding: 12px 22px 12px 22px;
+    cursor: pointer;
+}
+
+.slider-container-close{
+    height: 50px;
+    padding: 12px 22px 12px 22px;
+    cursor: pointer;
+    display: none;
+}
+
+.slider-container:hover {
+    background-color: rgba(191, 186, 186, 0.775);
+}
+
+@media (max-width: 800px) {
+    .nav-element{
+        display: none;
+    }
+    .nav-element-open{
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .slider-main{
+        width: 100%;
+    }
+}
